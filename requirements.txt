@@ -1,0 +1,4 @@
+python-dotenv # This is specifically used to call our environment variables.
+pandas
+numpy
+# pymongo:- It is basically used to data ingestion.
