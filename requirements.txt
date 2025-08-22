@@ -1,4 +1,8 @@
-python-dotenv # This is specifically used to call our environment variables.
+# This is specifically used to call our environment variables.
+python-dotenv 
 pandas
 numpy
-# pymongo:- It is basically used to data ingestion.
+pymongo
+certifi
+
+-e .

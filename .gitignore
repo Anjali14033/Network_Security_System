@@ -1,2 +1,5 @@
 # In this directory, we want to ignore the virtual environment folder(SO whenever we commit all the files and folders in my github repository, we don't want to track this venv folder there.)
 venv
+
+# This will have some crucial information with respect to the project details like API key, username, passwords and some inp. info.
+.env 
