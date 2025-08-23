@@ -1,0 +1,1 @@
+[ 2025-08-23 23:22:21,319 ] 14 networksecurity - ERROR - Error occurred in python script [C:\Users\anjali\Desktop\Network_Security_System\networksecurity\exception\exception.py] line [24] \u2192 'Logger' object has no attribute 'logging'

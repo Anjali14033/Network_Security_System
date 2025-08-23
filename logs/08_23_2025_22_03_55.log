@@ -1,0 +1,2 @@
+[ 2025-08-23 22:03:55,302 ] 21 networksecurity - INFO - Entered try block
+[ 2025-08-23 22:03:55,304 ] 25 networksecurity - ERROR - Error occurred in python script [C:\Users\anjali\Desktop\Network_Security_System\networksecurity\exception\exception.py] line [22] \u2192 division by zero
