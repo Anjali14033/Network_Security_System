@@ -1,0 +1,1 @@
+2025-09-04 00:15:18 [ERROR] networksecurity: Error occurred in python script [C:\Users\anjali\Desktop\Network_Security_System\main.py] line [11] \u2192 'TrainingPipelineConfig' object has no attribute 'artifact_dir'
