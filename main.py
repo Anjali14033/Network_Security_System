@@ -3,10 +3,10 @@ from networksecurity.exception.exception import NetworkSecurityException # here 
 from networksecurity.logging.loggerfile import logging
 from networksecurity.entity.config_entity import DataIngestionConfig
 from networksecurity.entity.config_entity import TrainingPipelineConfig
-from networksecurity.entity.artifact_entity import DataIngestionArtifact
+# from networksecurity.entity.artifact_entity import DataIngestionArtifact
 import sys
 
-if __name__ == "__main__":
+if __name_._ == "__main__":
     try:
         training_pipeline_config = TrainingPipelineConfig()
         data_ingestion_config = DataIngestionConfig(training_pipeline_config)
@@ -15,5 +15,5 @@ if __name__ == "__main__":
         data_ingestion_artifact = data_ingestion.initiate_data_ingestion()
         print(data_ingestion_artifact)
 
-    except Exception:
-       raise NetworkSecurityException
+    except Exception as e:
+       raise NetworkSecurityException(error = str(e), error_details = sys) 

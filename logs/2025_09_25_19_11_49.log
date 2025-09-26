@@ -1,0 +1,7 @@
+2025-09-25 19:11:55 [INFO] root: Starting data ingestion
+2025-09-25 19:11:58 [INFO] root: Performed train test split on the dataframe
+2025-09-25 19:11:58 [INFO] root: Exited split_data_as_train_test method on Data_Ingested class
+2025-09-25 19:11:58 [INFO] root: Exporting train and test file path.
+2025-09-25 19:11:58 [INFO] root: Exported train and test file path.
+2025-09-25 19:11:58 [ERROR] networksecurity: Error occurred in python script [C:\Users\anjali\Desktop\Network_Security_System\networksecurity\components\data_ingestion.py] line [102] \u2192 DataIngestionArtifact.__init__() got an unexpected keyword argument 'trained_file_path'
+2025-09-25 19:11:58 [ERROR] networksecurity: Error occurred in python script [C:\Users\anjali\Desktop\Network_Security_System\main.py] line [15] \u2192 Error occurred in python script [C:\Users\anjali\Desktop\Network_Security_System\networksecurity\components\data_ingestion.py] line [102] \u2192 DataIngestionArtifact.__init__() got an unexpected keyword argument 'trained_file_path'

@@ -10,6 +10,7 @@ import sys
 import numpy as np
 import pandas as pd
 import pymongo
+import certifi
 from typing import List
 from sklearn.model_selection import train_test_split
 
@@ -33,14 +34,14 @@ class DataIngestion:
         try:
             Database_Name = self.data_ingestion_config.database_name
             Collection_Name = self.data_ingestion_config.collection_name
-            self.mongo_client = pymongo.MongoClient(MONGO_DB_URL)
+            self.mongo_client = pymongo.MongoClient(MONGO_DB_URL, tls=True, tlsAllowInvalidCertificates=True)
             collection = self.mongo_client[Database_Name][Collection_Name]
 
             df = pd.DataFrame(list(collection.find()))
             if "_id" in df.columns.to_list():
                 df = df.drop(columns=["_id"], axis=1)
 
-            df.replace({"na": np.NAN}, inplace=True)
+            df.replace({"na": np.nan}, inplace=True)
             return df
         except Exception as e:
             raise NetworkSecurityException(e, sys)
@@ -99,7 +100,7 @@ class DataIngestion:
             dataframe = self.export_data_to_feature_store(dataframe)
             self.split_data_as_train_test(dataframe)
             data_ingestion_artifact = DataIngestionArtifact(
-                trained_file_path=self.data_ingestion_config.training_file_path,
+                train_file_path=self.data_ingestion_config.training_file_path,
                 test_file_path=self.data_ingestion_config.testing_file_path)
             return data_ingestion_artifact
         
